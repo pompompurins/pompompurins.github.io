@@ -162,6 +162,7 @@
 								</select>
 								
 								<button type="button" style="text-align: center;" class="itemstyle" onclick="applyUsername()">Apply!</button>
+								<button type="button" style="text-align: center;width: 120px;" class="itemstyle" onclick="saveConfig()">Export Config</button>
 								
 								<script type="text/javascript">
 									function applyUsername () {
@@ -215,6 +216,28 @@
 										
 										document.getElementById("5487ajfie").className="rf_i "+rank+""
 									}
+									
+									function saveConfig(){
+
+                    var usernameColor = "#" + document.getElementById("145uiuea").value;
+                    var usernameShadow = "#" + document.getElementById("485dsade").value;
+                    var usernameEffect = document.getElementById("90430mnfei").value;
+                    var usernameRank = document.getElementById("957thjura").value;
+                    var usernameSize = document.getElementById("548jkfdie").value + "px";
+
+                    if (usernameColor == "#"){usernameColor = "DEFAULT";}
+                    if (usernameShadow == "#"){usernameShadow = "NONE";}
+                    if (usernameEffect == ""){usernameEffect = "NONE";}
+                    if (usernameSize == "px"){usernameSize = "DEFAULT";}
+
+                    var blob = "{\r\n\tUsernameRank: " + usernameRank + ",\r\n\tUsernameColor: " + usernameColor +",\r\n\tUsernameShadow: " + usernameShadow + ",\r\n\tUsernameEffect: " + usernameEffect + ",\r\n\tUsernameSize: " + usernameSize + "\r\n}"
+
+                    var a = document.createElement("a");
+                    var file = new Blob([blob], {type: 'text/plain'});
+                    a.href = URL.createObjectURL(file);
+                    a.download = 'config.json';
+                    a.click();
+                  }
 								</script>
 							</p>
 						</div>
