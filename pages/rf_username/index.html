@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <title>RaidForums</title>
+    <title>BreachForums</title>
 
 	<link rel="icon" type="image/x-icon" href="./imgs/favicon.ico" />
     <link rel="shortcut icon" type="image/x-icon" href="./imgs/favicon.ico" />
 
-    <link type="text/css" rel="stylesheet" href="https://cdn.raidforums.com/s/css/all.min.css" />
+    <link type="text/css" rel="stylesheet" href="https://breached.co/cache/themes/theme4/all.min.css" />
     <link type="text/css" rel="stylesheet" href="./styles/roboto.css" />
     <link type="text/css" rel="stylesheet" href="./styles/normalize.min.css" />
     <link type="text/css" rel="stylesheet" href="./styles/lib.min.css?t=1639699241?v=7.1" />
@@ -41,7 +41,7 @@
               <ul class="sidenav__menu nav">
                 <li class="sidenav__home hidden-sm"><a href="https://raidforums.com"></a></li>
 
-				<li><a href="https://rf.ws/invite/121635699">Made with &#128151 by O G</a></li>
+				<li><a>Made with &#128151 by O G, Modified by pompompurin &#128151</a></li>
               </ul>
             </div>
           </div>
@@ -49,14 +49,14 @@
 
         <div class="logo noselect">
           <div class="wrapper" style="">
-            <div class="logo__image" style="display: block;"><a href="https://raidforums.com"><img src="./imgs/Logo_default.png" alt="RaidForums" title="RaidForums" /></a></div>
+            <div class="logo__image" style="display: block;"><a href="https://raidforums.com"></a></div>
             <div class="logo__text" style="display: none;"><a href="https://raidforums.com"><span>RAID</span>FORUMS</a></div>
           </div>
         </div>
       </header>
 
       <nav id="breadcrumb" class="wrapper rounded-top" style="">
-        <ul class="breadcrumb__main nav talign-mleft"><li class="breadcrumb__active">RaidForums</li></ul>
+        <ul class="breadcrumb__main nav talign-mleft"><li class="breadcrumb__active">BreachForums</li></ul>
       </nav>
 
       <main id="content" class="wrapper rounded-bottom" style="">
@@ -66,7 +66,7 @@
             <tr>
               <td class="thead theadShout" colspan="1">
                 <div class="expcolimage"><img src="./imgs/collapse.png" id="mshout_img" class="expander" alt="[-]" title="[-]" /></div>
-                <div><strong>RaidForums Color Test Shoutbox</strong></div>
+                <div><strong>BreachForums Color Test Shoutbox</strong></div>
               </td>
             </tr>
           </thead>
@@ -83,13 +83,13 @@
 
 					<div class="msgShout">
 						<span class="time_msgShout">
-							<span style="color: green;">[</span>#RF<span style="color: green;">]</span>
+							<span style="color: green;">[</span>#BF<span style="color: green;">]</span>
 						</span>
 
 						<span class="username_msgShout">
 							<i id="5487ajfie"></i>
-							<span style="color:#17C0CC" class="rf_noob" id="87554adler"> Test Username</span>
-						</span>:<span class="content_msgShout" style="">Welcome to RF!</span>
+							<span style="color:#F1C40F" class="rf_i rf_god" id="87554adler"> Test Username</span>
+						</span>:<span class="content_msgShout" style="">Welcome to BF!</span>
 
 					</div>
 				  </div>
@@ -131,88 +131,68 @@
 						<div class="classstyle" style="text-align: center;">
 							<p>
 								<div>
-									<textarea class="textstyle" placeholder="Username" type="text" name="username_text" id="159aapod" autocomplete="off"></textarea>
-									<textarea class="textstyle" placeholder="HTML Color Code (Username)" type="text" name="shout_text" id="145uiuea" autocomplete="off"></textarea>
-									<textarea class="textstyle" placeholder="HTML Color Code (Shadow)" type="text" name="shout_text" id="485dsade" autocomplete="off"></textarea>
+									<p style="padding: 0px;">To pick colors, use this website (Opens in a new tab): <a href="https://htmlcolorcodes.com/color-picker/">Color Picker — HTML Color Codes (htmlcolorcodes.com)</a></p>
+									<textarea spellcheck="false" class="textstyle" placeholder="Username" type="text" name="username_text" id="username" autocomplete="off"></textarea>
+									<textarea spellcheck="false" class="textstyle" placeholder="HTML Color Code (Username)" type="text" name="shout_text" id="145uiuea" autocomplete="off"></textarea>
+									<textarea spellcheck="false" class="textstyle" placeholder="HTML Color Code (Shadow)" type="text" name="shout_text" id="485dsade" autocomplete="off"></textarea>
 								</div>
-
-								<select name="username_rank" id="957thjura">
-									<option value="rf_noob">No Rank</option>
-									<option value="rf_member">Elite User</option>
-									<option value="rf_leet">Leet User</option>
-									<option value="rf_tryhard">Tryhard</option>
-									<option value="rf_vip">VIP</option>
-									<option value="rf_mvp">MVP</option>
-									<option value="rf_god">GOD</option>
-								</select>
 
 								<select name="username_effect" id="90430mnfei">
 									<option value="">No Effect</option>
 									<option value="rf_sparkles">Sparkles</option>
 									<option value="rf_stars">Stars</option>
+									<option value="rf_rain">Rain</option>
+									<option value="rf_brain">Sparkles 2</option>
 								</select>
 
-								<select name="bold_effect" id="548jkfdie">
-									<option value="">Default Text</option>
-									<option value="500">Slim Text</option>
-									<option value="700">Medium Text</option>
-									<option value="900">Bold Text</option>
-								</select>
 
 								<button type="button" style="text-align: center;" class="itemstyle" onclick="applyUsername()">Apply!</button>
-                <button type="button" style="text-align: center;width: 120px;" class="itemstyle" onclick="saveConfig()">Export Config</button>
+								<button type="button" style="text-align: center;" class="itemstyle" onclick="exampleUsername()">Example</button>
+								<button type="button" style="text-align: center;" class="itemstyle" onclick="cleartext()">Reset</button>
+                <button type="button" style="text-align: center;width: 120px;" class="itemstyle" onclick="saveConfig()">Get Code</button>
 
 								<script type="text/javascript">
+									function cleartext() {
+										document.getElementById("username").value = ""
+										document.getElementById("87554adler").innerHTML = " Test Username"
+										document.getElementById("145uiuea").value = ""
+										document.getElementById("485dsade").value = ""
+										document.getElementById("87554adler").style = "color:#F1C40F"
+										document.getElementById("87554adler").className = "rf_i rf_god"
+										document.getElementById("5487ajfie").className = ""
+									}
+
+									function exampleUsername () {
+										document.getElementById("username").value = "pompompurin"
+										document.getElementById("87554adler").innerHTML = "pompompurin"
+										document.getElementById("145uiuea").value = "ffd1dc"
+										document.getElementById("485dsade").value = "000000"
+										document.getElementById("87554adler").style = "color: #ffd1dc; text-shadow: 2px 2px 5px #000000; font-weight: 900;"
+										document.getElementById("87554adler").className = ""
+										document.getElementById("5487ajfie").className = "rf_i rf_god"
+
+									}
+
+
 									function applyUsername () {
 
-										/* getting selected rank */
-										var rank = document.getElementById("957thjura").value;
-										document.getElementById("5487ajfie").className="rf_i "+rank+""
-
-										/* setting custom username */
-										var username = document.getElementById("159aapod").value;
+										var username = document.getElementById("username").value;
 										if(username == ""){username = "Test Username"}
 										document.getElementById("87554adler").innerHTML = username;
 
-										var colorcode = document.getElementById("145uiuea").value;
-										/* setting default colorcodes */
-										if(colorcode == ""){
-											switch(rank) {
-												case "rf_tryhard":colorcode = "1E90FF";break;
-												case "rf_god":colorcode = "F1C40F";break;
-												case "rf_mvp":colorcode = "fff";break;
-												case "rf_vip":colorcode = "0c0";break;
-												case "rf_noob":colorcode = "17C0CC";break;
-												case "rf_leet":colorcode = "aac745";break;
-												case "rf_member":colorcode = "1ad8e5";break;
-											}
-										}
+										var colorcode = document.getElementById("145uiuea").value
+										if(colorcode == ""){colorcode = "F1C40F"}
 
-										var fontweight = document.getElementById("548jkfdie").value;
-										/* setting default fontweights */
-										if(fontweight == ""){
-											switch(rank) {
-												case "rf_tryhard":fontweight = "bold";break;
-												case "rf_god":fontweight = "900";break;
-												case "rf_mvp":fontweight = "700";break;
-												case "rf_vip":fontweight = "700";break;
-												case "rf_noob":fontweight = "600";break;
-												case "rf_leet":fontweight = "bold";break;
-												case "rf_member":fontweight = "bold";break;
-											}
-										}
+										var fontweight = "900";
 
 										var shadowcode = document.getElementById("485dsade").value;
 
 										var effect = document.getElementById("90430mnfei").value;
-										if(rank == "rf_tryhard"){
-											document.getElementById("87554adler").style="color: #"+colorcode+";text-shadow: 0px 0px 3px #1e90ff;background: transparent url(https://cdn.raidforums.com/s/csc.gif);font-weight: "+fontweight+";white-space: nowrap;background: transparent url(https://cdn.raidforums.com/s/csc.gif);";
-										}else{
-											document.getElementById("87554adler").style="color: #"+colorcode+";text-shadow: 3px 2px 6px#"+shadowcode+";font-weight: "+fontweight+";"
-											document.getElementById("87554adler").className=effect
-										}
+										
+										document.getElementById("87554adler").style = "color: #"+colorcode+";text-shadow: 3px 2px 6px#"+shadowcode+";font-weight: "+fontweight+";"
+										document.getElementById("87554adler").className = effect
 
-										document.getElementById("5487ajfie").className="rf_i "+rank+""
+										document.getElementById("5487ajfie").className = "rf_i rf_god"
 									}
 
                   function saveConfig(){
@@ -220,21 +200,25 @@
                     var usernameColor = "#" + document.getElementById("145uiuea").value;
                     var usernameShadow = "#" + document.getElementById("485dsade").value;
                     var usernameEffect = document.getElementById("90430mnfei").value;
-                    var usernameRank = document.getElementById("957thjura").value;
-                    var usernameSize = document.getElementById("548jkfdie").value + "px";
+                    var effect = document.getElementById("90430mnfei").value;
 
-                    if (usernameColor == "#"){usernameColor = "DEFAULT";}
-                    if (usernameShadow == "#"){usernameShadow = "NONE";}
+                    console.log(effect)
+                    if (effect == ""){effectClass = "";} else {effectClass = ' class="'+effect+'"'}
+
+                    if (usernameColor == "#"){usernameColor = "F1C40F";}
+                    if (usernameShadow == "#"){usernameShadow = "";ShadowCode = "";} else {ShadowCode = "text-shadow: 2px 2px 5px "+usernameShadow+";";}
                     if (usernameEffect == ""){usernameEffect = "NONE";}
-                    if (usernameSize == "px"){usernameSize = "DEFAULT";}
+                    usernameSize = "700";
 
-                    var blob = "{\r\n\tUsernameRank: " + usernameRank + ",\r\n\tUsernameColor: " + usernameColor +",\r\n\tUsernameShadow: " + usernameShadow + ",\r\n\tUsernameEffect: " + usernameEffect + ",\r\n\tUsernameSize: " + usernameSize + "\r\n}"
+                    
+                    var blob = '<i class="rf_i rf_god"></i><span'+effectClass+' style="color: '+usernameColor+'; '+ShadowCode+' font-weight: 900;">{username}</span>'
 
                     var a = document.createElement("a");
                     var file = new Blob([blob], {type: 'text/plain'});
                     a.href = URL.createObjectURL(file);
                     a.download = 'config.json';
-                    a.click();
+                    //a.click();
+                  	prompt("Code:", blob);
                   }
 
                 </script>
